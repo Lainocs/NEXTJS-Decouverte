@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Count from '../components/Count'
 import Navbar from '../components/Navbar'
+import Marketplace from '../components/Marketplace'
 import styles from '../styles/App.module.css'
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <main>
         {/* <Count /> */}
         { <Navbar /> }
+        { <Marketplace /> }
       </main>
     </div>
   )

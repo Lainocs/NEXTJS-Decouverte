@@ -5,9 +5,19 @@
     align-items: center;
 }
 
+.marketcontainer h3{
+    color: grey;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
 .container {
+    flex-wrap: wrap;
     width: 90vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+.container h3 {
+    color: black;
 }

@@ -1,0 +1,7 @@
+.navcontainer {
+    margin: 0 auto;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

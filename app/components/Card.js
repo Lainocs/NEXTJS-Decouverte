@@ -10,9 +10,9 @@ export default function Card(props){
         // send data via localstorage
             localStorage.setItem("details", JSON.stringify(props));
     }, [selected])
-    const gotoDetails = (e) => {
-        setSelected(e);
-        router.push({"pathname":"[id]", query: {id: e.id}});
+    const gotoDetails = () => {
+        setSelected(props);
+        router.push({"pathname":"[id]", query: {id: props.id}});
     }
     return (
         <div className={styles.card}>

@@ -10,7 +10,7 @@ export default function ProductDetails() {
         const details = JSON.parse(localStorage.getItem('details'))
         setDetails(details)
 
-    }, [])
+    }, [details])
 
     return (
         <main>

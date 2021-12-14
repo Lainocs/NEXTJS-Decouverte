@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "../styles/Card.module.css";
 import { useRouter } from "next/router";
-import Link from "next/link";
 
 export default function Card(props){
     const [selected, setSelected] = useState(null);

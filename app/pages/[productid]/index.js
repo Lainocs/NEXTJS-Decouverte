@@ -4,7 +4,7 @@ import styles from "/styles/Details.module.css";
 import Navbar from "../../components/Navbar";
 
 export default function ProductDetails() {
-    const [details, setDetails] = useState([])
+    const [details, setDetails] = useState([null])
 
     useEffect(() => {
         setDetails(JSON.parse(localStorage.getItem('details')))
@@ -16,7 +16,7 @@ export default function ProductDetails() {
 
             <div style={{display: 'flex', alignItems: 'center', flexDirection: 'column', justifyContent: 'center' }}>
                 <>
-                { details.image && (
+                { details && details.image && (
                     <div className={styles.card}>
                         <h1>{details.title}</h1>
                         <Image src={details.image} width={200} height={200} alt={details.image} />

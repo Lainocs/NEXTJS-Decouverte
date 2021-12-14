@@ -7,9 +7,7 @@ export default function ProductDetails() {
     const [details, setDetails] = useState([])
 
     useEffect(() => {
-        const details = JSON.parse(localStorage.getItem('details'))
-        setDetails(details)
-
+        setDetails(JSON.parse(localStorage.getItem('details')))
     }, [details])
 
     return (

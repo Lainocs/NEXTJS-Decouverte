@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import styles from '../styles/Navbar.module.css'
 
@@ -6,8 +7,7 @@ export default function Navbar() {
     
     return (
         <div className={styles.navcontainer}>
-            <h3>NFT Marketplace</h3>
-            <p>Menu</p>
+            <a href="/">Lujipeka</a>
             <div>
                 {user ? (
                         <button>
